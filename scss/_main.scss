@@ -1,0 +1,120 @@
+$color-fondo: #FCE4DE;
+$color-letra-ppal: #EB5454;
+$font-ppal: 'Oranienbaum', serif;
+$color-letra-sec: rgb(92, 89, 89);
+$font-sec: 'Dosis', sans-serif;
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        
+        .video {
+            width: 400px;
+            height: 400px;
+            margin-left: 8px;
+            margin-top: 20px;
+        }
+
+        
+       
+    }
+    
+}
+
+
+
+.sobreMi{
+    font-family: $font-ppal;
+    color: $color-letra-ppal;
+    font-size: 50px;
+    margin: 100px auto 0px 100px;
+}
+
+h2{
+    font-family: $font-ppal;
+    color: $color-letra-ppal;
+    font-size: 30px;
+    margin: 50px auto 50px 100px;
+}
+
+
+/*Contacto*/
+
+.contacto {
+    color: $color-letra-sec;
+    font: $font-ppal;
+    font-size: 22px;
+    margin-left: 100px;
+}
+
+.formulario {
+    display:block;
+    margin:5rem auto;
+    width:50rem;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+input{
+    background-color: rgb(255, 250, 250); 
+    width: 450px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border: 1.5px solid $color-letra-ppal;
+    margin-top: 10px;  
+    margin-bottom: 20px; 
+    padding-left: 10px;
+}
+
+  textarea{
+    background-color: rgb(255, 250, 250); 
+    width: 450px; 
+    height: 130px; 
+    border-radius: 5px;  
+    border: 1.5px solid $color-letra-ppal; 
+    margin-top: 10px; 
+    margin-bottom: 20px;  
+    padding-left: 10px;
+    padding-top: 15px; 
+}
+
+label {
+    color: $color-letra-sec;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: $font-sec ;
+    display: block;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    letter-spacing: 1px;
+}
+
+form {
+    margin:0 auto;
+    width:40rem;
+}
+
+
+button {
+    color: $color-letra-sec;
+    font-size: 1.3rem;
+    font-family: $font-sec;
+    display: block;
+    padding: 2rem;
+    border: 1px solid $font-sec;
+    border-radius: 5px;
+    margin-top: 5rem;
+}
+
+
+legend {
+    color: $color-letra-ppal  ;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: $font-sec;
+}
+

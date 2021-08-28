@@ -1,0 +1,201 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #FCE4DE;
+  font-family: 'Oranienbaum', serif; }
+
+h1 a {
+  font: "Oranienbaum", serif;
+  color: #EB5454;
+  font-size: 55px; }
+  h1 a:hover {
+    color: #5c5959; }
+
+.nav justify-content-end {
+  list-style: none; }
+
+.nav-item {
+  font-size: 2rem;
+  margin: 2rem; }
+
+.nav-link {
+  text-decoration: none;
+  color: #EB5454;
+  font-family: "Oranienbaum", serif;
+  background-color: #FCE4DE; }
+  .nav-link:hover {
+    color: #5c5959; }
+
+a {
+  text-decoration: none; }
+
+.video {
+  width: 750px;
+  height: 750px;
+  margin-left: 250px;
+  margin-top: 20px; }
+
+/*Habilidades*/
+.habilidades {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  color: #EB5454;
+  font-size: 1.5rem;
+  margin: auto; }
+  .habilidades h3 {
+    font-size: 2rem; }
+
+.idiomas,
+.skills,
+.hobbies {
+  margin: 60px;
+  align-items: center;
+  border: 1px solid #5c5959;
+  padding: 50px; }
+
+div {
+  grid-area: contenido; }
+
+/*Educación*/
+.padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  color: #5c5959;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  border: 1px solid #EB5454; }
+
+.hijo1 {
+  flex-basis: 25rem;
+  text-align: center;
+  margin: 50px;
+  margin-left: 70px;
+  border-color: #EB5454; }
+
+.hijo2 {
+  flex-basis: 25rem;
+  text-align: center;
+  margin: 50px; }
+
+/*Experiencia*/
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.experienciaAlfa {
+  background-color: #f55a5a;
+  color: white;
+  text-align: justify;
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+  flex-basis: 5rem;
+  padding: 3rem; }
+
+.experienciaBeta {
+  background-color: #e3acac;
+  color: white;
+  text-align: justify;
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+  flex-basis: 5rem;
+  padding: 3rem; }
+
+@media only screen and (max-width: 600px) {
+  body .video {
+    width: 400px;
+    height: 400px;
+    margin-left: 8px;
+    margin-top: 20px; } }
+
+.sobreMi {
+  font-family: "Oranienbaum", serif;
+  color: #EB5454;
+  font-size: 50px;
+  margin: 100px auto 0px 100px; }
+
+h2 {
+  font-family: "Oranienbaum", serif;
+  color: #EB5454;
+  font-size: 30px;
+  margin: 50px auto 50px 100px; }
+
+/*Contacto*/
+.contacto {
+  color: #5c5959;
+  font: "Oranienbaum", serif;
+  font-size: 22px;
+  margin-left: 100px; }
+
+.formulario {
+  display: block;
+  margin: 5rem auto;
+  width: 50rem;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px; }
+
+input {
+  background-color: snow;
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1.5px solid #EB5454;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px; }
+
+textarea {
+  background-color: snow;
+  width: 450px;
+  height: 130px;
+  border-radius: 5px;
+  border: 1.5px solid #EB5454;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 15px; }
+
+label {
+  color: #5c5959;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Dosis", sans-serif;
+  display: block;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  letter-spacing: 1px; }
+
+form {
+  margin: 0 auto;
+  width: 40rem; }
+
+button {
+  color: #5c5959;
+  font-size: 1.3rem;
+  font-family: "Dosis", sans-serif;
+  display: block;
+  padding: 2rem;
+  border: 1px solid "Dosis", sans-serif;
+  border-radius: 5px;
+  margin-top: 5rem; }
+
+legend {
+  color: #EB5454;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Dosis", sans-serif; }
