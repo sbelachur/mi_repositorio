@@ -10,10 +10,18 @@ body {
   background-color: #FCE4DE;
   font-family: "Oranienbaum", serif; }
 
+header {
+  background-color: #FACDC1;
+  height: 10em; }
+
+h1 {
+  margin-top: 0.5em;
+  margin-right: 0.2em; }
+
 h1 a {
   font: "Oranienbaum", serif;
   color: #EB5454;
-  font-size: 55px; }
+  font-size: 6rem; }
   h1 a:hover {
     color: #5c5959; }
 
@@ -21,14 +29,15 @@ h1 a {
   list-style: none; }
 
 .nav-item {
-  font-size: 2rem;
-  margin: 2rem; }
+  font-size: 2.5rem;
+  margin-top: 1.5em;
+  margin-left: 0.2em; }
 
 .nav-link {
   text-decoration: none;
   color: #EB5454;
   font-family: "Oranienbaum", serif;
-  background-color: #FCE4DE; }
+  background-color: #FACDC1; }
   .nav-link:hover {
     color: #5c5959; }
 
@@ -36,10 +45,14 @@ a {
   text-decoration: none; }
 
 .video {
-  width: 750px;
-  height: 750px;
-  margin-left: 250px;
-  margin-top: 20px; }
+  width: 90em;
+  height: 80em;
+  margin-left: 25em;
+  margin-top: 4em; }
+
+.imagenExperiencia {
+  width: 35em;
+  height: 30em; }
 
 /*Habilidades*/
 .habilidades {
@@ -110,85 +123,76 @@ a {
   flex-basis: 5rem;
   padding: 3rem; }
 
-@media only screen and (max-width: 544px) {
-  body .video {
-    width: 400px;
-    height: 400px;
-    margin-left: 6rem;
-    margin-top: 20px; }
-  body h2 {
-    font-size: 3rem; }
-  body .sobreMi {
-    font-size: 4rem; }
-  body .hijo1 {
-    margin-left: 2rem;
-    text-align: left; }
-  body .habilidades {
-    flex-direction: column;
-    margin-left: 80px; }
-  body .skills,
-  body .hobbies {
-    width: 23rem; }
-  body .contacto {
-    margin-left: 6rem; }
-  body input {
-    width: 300px; }
-  body textarea {
-    width: 300px; }
-  body label {
-    margin-left: 3rem; }
-  .form {
-    margin-left: 5rem; } }
+.fotoExperiencia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 7em;
+  margin-bottom: 10em;
+  margin-top: 10em; }
+
+.videoYoutube {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 7em;
+  margin-bottom: 10em;
+  margin-top: 10em; }
 
 .sobreMi {
   font-family: "Oranienbaum", serif;
   color: #EB5454;
-  font-size: 50px;
-  margin: 100px auto 0px 100px; }
+  font-size: 4rem;
+  margin: 3em auto 0em 3em; }
 
 h2 {
   font-family: "Oranienbaum", serif;
   color: #EB5454;
-  font-size: 30px;
-  margin: 50px auto 50px 100px; }
+  font-size: 3rem;
+  margin: 2em auto 2em 2.5em; }
 
 /*Contacto*/
-.contacto {
-  color: #5c5959;
-  font: "Oranienbaum", serif;
-  font-size: 22px;
-  margin-left: 100px; }
-
 .formulario {
   display: block;
   margin: 5rem auto;
   width: 50rem;
   height: auto;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  padding-left: 30px; }
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  border: #EB5454 solid 1px;
+  background-color: #FACDC1; }
 
 input {
   background-color: snow;
-  width: 450px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1.5px solid #EB5454;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  padding-left: 10px; }
-
-textarea {
-  background-color: snow;
-  width: 450px;
-  height: 130px;
+  width: 35em;
+  height: 4em;
   border-radius: 5px;
   border: 1.5px solid #EB5454;
   margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 10px;
-  padding-top: 15px; }
+  transition: all 2s; }
+
+input:focus {
+  width: 40em;
+  height: 6em; }
+
+textarea {
+  background-color: snow;
+  width: 35em;
+  height: 20em;
+  border-radius: 5px;
+  border: 1.5px solid #EB5454;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-left: 2em;
+  padding-top: 2.5; }
 
 label {
   color: #5c5959;
@@ -219,3 +223,37 @@ legend {
   font-weight: bold;
   font-size: 2.5rem;
   font-family: "Dosis", sans-serif; }
+
+.colorFondo {
+  padding: 3rem;
+  background-color: #FACDC1; }
+
+@media only screen and (max-width: 544px) {
+  body .video {
+    width: 400px;
+    height: 400px;
+    margin-left: 6rem;
+    margin-top: 20px; }
+  body h2 {
+    font-size: 3rem; }
+  body .sobreMi {
+    font-size: 4rem; }
+  body .hijo1 {
+    margin-left: 2rem;
+    text-align: left; }
+  body .habilidades {
+    flex-direction: column;
+    margin-left: 80px; }
+  body .skills,
+  body .hobbies {
+    width: 23rem; }
+  body .contacto {
+    margin-left: 6rem; }
+  body input {
+    width: 300px; }
+  body textarea {
+    width: 300px; }
+  body label {
+    margin-left: 3rem; }
+  .form {
+    margin-left: 5rem; } }

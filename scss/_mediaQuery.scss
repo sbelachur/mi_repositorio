@@ -1,0 +1,64 @@
+$color-fondo: #FCE4DE;
+$color-letra-ppal: #EB5454;
+$font-ppal: 'Oranienbaum', serif;
+$color-letra-sec: rgb(92, 89, 89);
+$font-sec: 'Dosis', sans-serif;
+$color-fondo-sec: #FACDC1;
+
+@media only screen and (max-width: 544px) {
+
+    body {
+        
+        .video {
+            width: 400px;
+            height: 400px;
+            margin-left: 6rem;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+
+        }
+
+        .sobreMi {
+            font-size: 4rem;
+        }
+
+        .hijo1{
+            margin-left: 2rem;
+            text-align: left;
+        }
+
+        .habilidades {
+            flex-direction: column;
+            margin-left: 80px;
+        }
+
+        .skills,
+        .hobbies {
+            width: 23rem;
+        }
+
+       .contacto {
+           margin-left: 6rem;
+       } 
+       
+      input {
+          width: 300px;
+      }
+
+      textarea{
+          width: 300px;
+      }
+
+      label {
+          margin-left: 3rem;
+      }
+    }
+
+    .form{
+        margin-left: 5rem;
+    }
+    
+}
