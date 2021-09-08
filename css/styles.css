@@ -10,6 +10,11 @@ body {
   background-color: #FCE4DE;
   font-family: "Oranienbaum", serif; }
 
+footer {
+  background-color: #FACDC1;
+  margin: 5em;
+  padding-bottom: 2em; }
+
 header {
   background-color: #FACDC1;
   height: 10em; }

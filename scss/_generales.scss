@@ -3,6 +3,7 @@ $color-letra-ppal: #EB5454;
 $font-ppal: 'Oranienbaum', serif;
 $color-letra-sec: rgb(92, 89, 89);
 $font-sec: 'Dosis', sans-serif;
+$color-fondo-sec: #FACDC1;
 
 * {
     margin: 0;
@@ -19,4 +20,12 @@ $color-letra-ppal: #EB5454;
 body{
     background-color: $color-fondo;
     font-family: $font-ppal;
+}
+
+footer {
+
+    background-color: $color-fondo-sec;
+    margin: 5em;
+    padding-bottom: 2em;
+
 }
