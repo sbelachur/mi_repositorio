@@ -10,9 +10,8 @@ $color-fondo-sec: #FACDC1;
     body {
         
         .video {
-            width: 400px;
-            height: 400px;
-            margin-left: 6rem;
+            width: 65%;
+            margin-left: 15%;
             margin-top: 20px;
         }
 
@@ -36,7 +35,8 @@ $color-fondo-sec: #FACDC1;
         }
 
         .skills,
-        .hobbies {
+        .hobbies,
+        .idiomas {
             width: 23rem;
         }
 
@@ -60,5 +60,53 @@ $color-fondo-sec: #FACDC1;
     .form{
         margin-left: 5rem;
     }
+
+    .videoYoutube {
+
+        flex-direction: column;
+        margin-left: 7em;
+        margin-bottom: 10em;
+        margin-top: 10em;
+        width: 65%;
     
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+
+        .video {
+            width: 65%;
+            margin-left: 15em;
+        }
+
+        .habilidades {
+            flex-direction: column;
+            margin-left: 100px;
+        }
+
+        .skills,
+        .hobbies,
+        .idiomas {
+            width: 50rem;
+            text-align: justify;
+        }
+
+        
+
+        .videoYoutube {
+
+            flex-direction: column;
+            margin-left: 7em;
+            margin-bottom: 10em;
+            margin-top: 10em;
+            width: 80%;
+        
+        }
+
+
+    
+    }
 }
