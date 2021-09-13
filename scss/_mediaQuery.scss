@@ -78,13 +78,13 @@ $color-fondo-sec: #FACDC1;
     
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 
     body {
 
         .video {
             width: 65%;
-            margin-left: 15em;
+            margin-left: 5em;
         }
 
         .habilidades {
