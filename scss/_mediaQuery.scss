@@ -8,11 +8,12 @@ $color-fondo-sec: #FACDC1;
 @media only screen and (max-width: 544px) {
 
     body {
+
         
         .video {
             width: 65%;
-            margin-left: 15%;
             margin-top: 20px;
+            margin-left: 10em !important;
         }
 
         h2 {
@@ -69,6 +70,10 @@ $color-fondo-sec: #FACDC1;
         margin-top: 10em;
         width: 65%;
     
+    }
+
+    .footer {
+        margin-left: 3em;
     }
     
 }

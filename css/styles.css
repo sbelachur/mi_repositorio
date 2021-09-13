@@ -31,6 +31,9 @@ h1 a {
   h1 a:hover {
     color: #5c5959; }
 
+.colorLetra {
+  color: #EB5454; }
+
 .nav-item {
   font-size: 2.5rem;
   margin-top: 1.5em;
@@ -47,11 +50,16 @@ h1 a {
 a {
   text-decoration: none; }
 
-.navbar-toggler-icon {
-  color: #EB5454 !important; }
+.navbar-light .navbar-toggler {
+  color: #EB5454 !important;
+  border-color: #EB5454; }
 
 .container-fluid {
   width: 100%; }
+
+.barraMenu {
+  background-color: #FACDC1;
+  color: #EB5454; }
 
 .video {
   width: 60%;
@@ -67,13 +75,16 @@ a {
   justify-content: flex-start;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 7em;
+  margin-left: 15em;
   margin-bottom: 10em;
   margin-top: 10em;
   width: 65%; }
 
-.videoYoutube1 {
-  margin-bottom: 10em; }
+.videoYoutube1,
+.videoYoutube2,
+.videoYoutube3 {
+  align-items: center;
+  margin-left: 15em; }
 
 .fotoExperiencia {
   display: flex;
@@ -103,7 +114,8 @@ a {
   margin: 60px;
   align-items: center;
   border: 1px solid #5c5959;
-  padding: 50px; }
+  padding: 50px;
+  text-transform: uppercase; }
 
 .skills {
   text-align: center; }
@@ -161,27 +173,19 @@ a {
   flex-basis: 5rem;
   padding: 3rem; }
 
-.fotoExperiencia {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-left: 7em;
-  margin-bottom: 10em;
-  margin-top: 10em; }
-
 .sobreMi {
   font-family: "Oranienbaum", serif;
   color: #EB5454;
   font-size: 4rem;
-  margin: 3em auto 0em 3em; }
+  margin: 3em auto 0em 3em;
+  text-transform: uppercase; }
 
 h2 {
   font-family: "Oranienbaum", serif;
   color: #EB5454;
   font-size: 3rem;
-  margin: 2em auto 2em 2.5em; }
+  margin: 2em auto 2em 2.5em;
+  text-transform: uppercase; }
 
 /*Contacto*/
 .formulario {
@@ -213,14 +217,15 @@ input:focus {
 
 textarea {
   background-color: snow;
-  width: 35em;
+  width: 24em;
   height: 20em;
   border-radius: 5px;
   border: 1.5px solid #EB5454;
   margin-top: 2em;
   margin-bottom: 2em;
   padding-left: 2em;
-  padding-top: 2.5; }
+  padding-top: 2.5;
+  font-size: 1.5rem; }
 
 label {
   color: #5c5959;
@@ -229,8 +234,9 @@ label {
   font-family: "Dosis", sans-serif;
   display: block;
   margin-top: 3rem;
-  margin-left: 5rem;
-  letter-spacing: 1px; }
+  margin-left: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
 
 form {
   margin: 0 auto;
@@ -242,26 +248,36 @@ button {
   font-family: "Dosis", sans-serif;
   display: inline-block;
   padding: 2rem;
-  border: 1px solid "Dosis", sans-serif;
+  border: 1px solid #EB5454;
   border-radius: 5px;
-  margin: 3em;
-  padding: 2rem; }
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 35rem;
+  text-transform: uppercase; }
 
 legend {
   color: #EB5454;
   font-weight: bold;
   font-size: 2.5rem;
-  font-family: "Dosis", sans-serif; }
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
 
 .colorFondo {
   padding: 3rem;
   background-color: #FACDC1; }
 
+.iconos {
+  font-size: 4rem; }
+
+.tamanoLetra {
+  font-size: 2rem; }
+
 @media only screen and (max-width: 544px) {
   body .video {
     width: 65%;
-    margin-left: 15%;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 10em !important; }
   body h2 {
     font-size: 3rem; }
   body .sobreMi {
@@ -291,7 +307,9 @@ legend {
     margin-left: 7em;
     margin-bottom: 10em;
     margin-top: 10em;
-    width: 65%; } }
+    width: 65%; }
+  .footer {
+    margin-left: 3em; } }
 
 @media only screen and (max-width: 768px) {
   body .video {

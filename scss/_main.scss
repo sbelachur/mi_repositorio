@@ -11,6 +11,7 @@ $color-fondo-sec: #FACDC1;
     color: $color-letra-ppal;
     font-size: 4rem;
     margin: 3em auto 0em 3em;
+    text-transform: uppercase;
 }
 
 h2{
@@ -18,6 +19,7 @@ h2{
     color: $color-letra-ppal;
     font-size: 3rem;
     margin: 2em auto 2em 2.5em;
+    text-transform: uppercase;
     
 }
 
@@ -56,7 +58,7 @@ input:focus {
 
   textarea{
     background-color: rgb(255, 250, 250); 
-    width: 35em; 
+    width: 24em; 
     height: 20em; 
     border-radius: 5px;  
     border: 1.5px solid $color-letra-ppal; 
@@ -64,6 +66,7 @@ input:focus {
     margin-bottom: 2em;  
     padding-left: 2em;
     padding-top: 2.5; 
+    font-size: 1.5rem;
 }
 
 label {
@@ -73,8 +76,9 @@ label {
     font-family: $font-sec ;
     display: block;
     margin-top: 3rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 form {
@@ -89,10 +93,12 @@ button {
     font-family: $font-sec;
     display: inline-block;
     padding: 2rem;
-    border: 1px solid $font-sec;
+    border: 1px solid $color-letra-ppal;
     border-radius: 5px;
-    margin: 3em;
+    margin-bottom: 2rem;
     padding: 2rem;
+    width: 35rem;
+    text-transform: uppercase;
 }
 
 
@@ -101,6 +107,8 @@ legend {
     font-weight: bold;
     font-size: 2.5rem;
     font-family: $font-sec;
+    margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 
@@ -108,7 +116,12 @@ legend {
 
     padding: 3rem;
     background-color: $color-fondo-sec;
-
-
 }
 
+.iconos {
+    font-size: 4rem;
+}
+
+.tamanoLetra {
+    font-size: 2rem;
+}

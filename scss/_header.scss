@@ -27,6 +27,10 @@ h1 a{
     }
 }
 
+.colorLetra {
+    color: $color-letra-ppal;
+}
+
 
 .nav-item {
     font-size: 2.5rem;
@@ -48,11 +52,18 @@ a {
     text-decoration: none;
 }
 
-.navbar-toggler-icon {
-    color: $color-letra-ppal !important;
-}
+.navbar-light .navbar-toggler {
+        color: $color-letra-ppal !important;
+        border-color: $color-letra-ppal;
+    }
+
 
 .container-fluid {
     width: 100%;
+}
+
+.barraMenu {
+    background-color: $color-fondo-sec;
+    color: $color-letra-ppal;
 }
 
