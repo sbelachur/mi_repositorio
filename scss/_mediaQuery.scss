@@ -5,7 +5,7 @@ $color-letra-sec: rgb(92, 89, 89);
 $font-sec: 'Dosis', sans-serif;
 $color-fondo-sec: #FACDC1;
 
-@media only screen and (max-width: 544px) {
+@media only screen and (max-width: 576px) {
 
     body {
 
@@ -14,6 +14,8 @@ $color-fondo-sec: #FACDC1;
             width: 65%;
             margin-top: 20px;
             margin-left: 10em !important;
+            display: block;
+            margin: auto;
         }
 
         h2 {
@@ -23,6 +25,7 @@ $color-fondo-sec: #FACDC1;
 
         .sobreMi {
             font-size: 4rem;
+            margin-bottom: 1em;
         }
 
         .hijo1{
@@ -32,13 +35,17 @@ $color-fondo-sec: #FACDC1;
 
         .habilidades {
             flex-direction: column;
-            margin-left: 80px;
         }
 
         .skills,
         .hobbies,
         .idiomas {
-            width: 23rem;
+            margin-bottom: 2em;
+            display: block;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70% !important;
         }
 
        .contacto {
@@ -72,13 +79,39 @@ $color-fondo-sec: #FACDC1;
     
     }
 
+    .videoYoutube1,
+    .videoYoutube2,
+    .videoYoutube3 {
+        margin-bottom: 2em;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer {
-        margin-left: 3em;
+        display: block;
+        margin: auto;
+    }
+
+    .fotoExperiencia {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-evenly; 
+    }
+
+    .imagenExperiencia {
+        margin-bottom: 7em;
+        width: 60%;
+        display: block;
+        margin-right: 2.5em;
     }
     
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
 
     body {
 
@@ -95,7 +128,7 @@ $color-fondo-sec: #FACDC1;
         .skills,
         .hobbies,
         .idiomas {
-            width: 50rem;
+            width: 50%;
             text-align: justify;
         }
 
@@ -111,8 +144,15 @@ $color-fondo-sec: #FACDC1;
         
         }
 
-        
-
+        .videoYoutube1,
+        .videoYoutube2,
+        .videoYoutube3 {
+            margin-bottom: 3em;
+            display: block;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     
     }
