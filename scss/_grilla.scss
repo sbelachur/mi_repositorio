@@ -109,5 +109,39 @@ $color-fondo-sec: #FACDC1;
 }
 
 
+/*Servicios*/
+
+.servicios {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    color: $color-letra-ppal;
+    font-size: 2rem;
+    margin: auto;
+    h3 {
+        font-size: 2.5rem;
+
+    }
+}
+
+.canto,
+.tap,
+.performance {
+    margin: 60px;
+    align-items: center;
+    border: 1px solid $color-letra-sec;
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+/*.tap {
+    text-align: center;
+}
+
+.canto,
+.performance {
+    width: 20%;
+}*/
 
 
