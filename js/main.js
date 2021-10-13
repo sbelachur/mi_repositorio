@@ -67,3 +67,20 @@ if (confirmacion == true){
     alert = "El total es" + total
 }
 
+
+class Performance {
+    constructor (nombre, duracion, precio) {
+        this.name = nombre;
+        this.hour = duracion;
+        this.price = precio;
+    }
+    tipo () {
+        console.log ("El show " + (this.name) + " dura " + (this.hour) + " y cuesta " + (this.price) + " euros.");
+
+    }
+}
+
+let performance1 = new Performance ("Canciones Modernas", "1 hora", 50);
+performance1.tipo();
+let performance2 = new Performance ("Baile Moderno", "2 horas", 90);
+performance2.tipo ();
