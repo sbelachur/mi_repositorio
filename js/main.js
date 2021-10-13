@@ -1,6 +1,6 @@
 
 
-let cantoIndividual = "Clase de Canto Individual -- 10 euros"
+/*let cantoIndividual = "Clase de Canto Individual -- 10 euros"
 let cantoMes = "Canto - Mes Completo : 35 euros"
 let cantoTrimestre = "Canto - Trimestral : 95 euros"
 
@@ -65,7 +65,7 @@ if (confirmacion == true){
 
 } else {
     alert = "El total es" + total
-}
+}*/
 
 
 class Performance {
@@ -84,3 +84,23 @@ let performance1 = new Performance ("Canciones Modernas", "1 hora", 50);
 performance1.tipo();
 let performance2 = new Performance ("Baile Moderno", "2 horas", 90);
 performance2.tipo ();
+
+
+        let servicio; 
+
+		let servicios = [];
+
+
+
+
+		do{
+			servicio = prompt ("Introduce el nombre del servicio");
+			servicios.push(servicio);
+		} while (confirm("¿Desea agregar otro servicio?"))
+
+	
+		
+
+		console.log (servicios);
+
+		console.log ("<p>El número de servicios es " + servicios.length + "</p>");
