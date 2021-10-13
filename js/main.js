@@ -98,6 +98,8 @@ performance2.tipo ();
 			servicios.push(servicio);
 		} while (confirm("¿Desea agregar otro servicio?"))
 
+        servicios_ordenados = servicios.sort();
+
 	
 		
 
