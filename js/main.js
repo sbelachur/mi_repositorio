@@ -48,7 +48,7 @@ for (var servicio of arrayServicios) {
 var ordenarPrecio = [];
 
 ordenarPrecio = arrayServicios.map (elemento => elemento);
-var ordenarPrecio = arrayServicio;
+var ordenarPrecio = arrayServicios;
 ordenarPrecio.sort (function (a, b) {
     return a.precio - b.precio;
 });
