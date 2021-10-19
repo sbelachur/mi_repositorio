@@ -1,108 +1,65 @@
 
+/*Servicios*/
 
-/*let cantoIndividual = "Clase de Canto Individual -- 10 euros"
-let cantoMes = "Canto - Mes Completo : 35 euros"
-let cantoTrimestre = "Canto - Trimestral : 95 euros"
-
-let tapIndividual = "Tap Dance - Clase Individual : 15 euros"
-let tapMes = "Tap Dance - Mes Completo: 55 euros"
-let tapTrimestre = "Tap Dance - Trimestral : 155 euros"
-
-let servicio 
-servicio = prompt ("¿Qué servicios deseas contratar? \n" + "1. " + cantoIndividual + "\n2. " + cantoMes + "\n3. " + cantoTrimestre)
-servicio = parseInt (servicio)
-
-
-function servicioCanto (servicio) {
-    switch (servicio) {
-        case 1: {
-            alert ("El total es de 10 euros");
-            return 10;
-        };
-        case 2: {
-            alert ("El total es de 35 euros")
-            return 35;
-        };
-        default: {
-            alert ("El total es de 95 euros");
-            return 95;
-        }
-    }
-}  
-
-
-function servicioTap (servicio2) {
-    switch (servicio2) {
-        case 1: {
-            alert ("El total es de 15 euros");
-            return 15;
-        };
-        case 2: {
-            alert ("El total es de 55 euros");
-            return 55;
-        };
-        default: {
-            alert ("El total es de 155 euros");
-            return 155;
-        }
-    }
-}
-
-let total = servicioCanto (servicio);
-
-let confirmacion = confirm ("¿Desea contratar algún otro servicio'")
-
-if (confirmacion == true){
-
-    let servicio2 
-    servicio2 = prompt ("¿Qué servicios deseas contratar? \n" + "1. " + tapIndividual + "\n2. " + tapMes + "\n3. " + tapTrimestre)
-    servico2 = parseInt (servicio2)
-
-    total += servicioTap(servicio2);
-    alert("El total de todos los servicios es " + total)
-
-    
-
-} else {
-    alert = "El total es" + total
-}*/
-
-
-class Performance {
+class Servicio {
     constructor (nombre, duracion, precio) {
-        this.name = nombre;
-        this.hour = duracion;
-        this.price = precio;
+        this.nombre = nombre;
+        this.duracion = duracion;
+        this.precio = parseFloat (precio);
     }
-    tipo () {
-        console.log ("El show " + (this.name) + " dura " + (this.hour) + " y cuesta " + (this.price) + " euros.");
 
+    sumarTarifaServicio () {
+        return this.precio * 1.10;
     }
 }
 
-let performance1 = new Performance ("Canciones Modernas", "1 hora", 50);
-performance1.tipo();
-let performance2 = new Performance ("Baile Moderno", "2 horas", 90);
-performance2.tipo ();
 
 
-        let servicio; 
-
-		let servicios = [];
+var arrayServicios = [];
 
 
+do {
+    var tipo = prompt ("¿Qué servicios deseas ingresar para contratar? Si no deseas ingresar servicios, escribe ninguno");
+    if (tipo === "ninguno" || tipo === "NINGUNO" || tipo === "Ninguno") {
+        break;
+    } else {
+        nombreServicio = tipo;
+        var duracionServicio = prompt ("Ingrese la duración del servicio");
+        var precioServicio = prompt ("Ingrese el precio del servicio");
+        arrayServicios.push (new Servicio (nombreServicio, duracionServicio, precioServicio));
+    }
+}
+while (tipo != "ninguno" || tipo != "NINGUNO" || tipo != "Ninguno")
 
+console.log (arrayServicios);
 
-		do{
-			servicio = prompt ("Introduce el nombre del servicio");
-			servicios.push(servicio);
-		} while (confirm("¿Desea agregar otro servicio?"))
+for (var servicio of arrayServicios) {
+    document.write ("<ul><li><h3>Tipo: " + servicio.nombre + "</h3></li>");
+    document.write ("<li><h3>Duracion: " + servicio.duracion + "</h3></li>");
+    document.write ("<li><h3>Precio: " + servicio.precio + "</h3></li>");
+    document.write ("<li><h3>Precio con Tarifa de Servicio: " + servicio.sumarTarifaServicio () + "</h3></li></ul><br>");
+    console.log (servicio.nombre);
+    console.log (servicio.duracion);
+    console.log (servicio.precio);
+    console.log (servicio.sumarTarifaServicio());
 
-        servicios_ordenados = servicios.sort();
+}
 
-	
-		
+var ordenarPrecio = [];
 
-		console.log (servicios);
+ordenarPrecio = arrayServicios.map (elemento => elemento);
+var ordenarPrecio = arrayServicio;
+ordenarPrecio.sort (function (a, b) {
+    return a.precio - b.precio;
+});
+console.log ("Ordenado por precio");
+console.log (ordenarPrecio);
+document.write ("<h3> Servicios ordenados por precio");
 
-		console.log ("<p>El número de servicios es " + servicios.length + "</p>");
+for (var servicio of ordenarPrecio) {
+    document.write ("<ul><li><h3> Nombre: " + servicio.nombre + "</h3></li>");
+    document.write ("<li><h3> Duracion: " + servicio.duracion + "</h3></li>");
+    document.write ("<li><h3> Nombre: " + servicio.precio + "</h3></li></lu>");
+
+}
+
