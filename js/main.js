@@ -1,6 +1,4 @@
 
-
-
 // let div = document.getElementById ("canto");
 
 // console.log (div.innerHTML);
@@ -8,47 +6,47 @@
 
 /*Servicios*/
 
-class Servicio {
-    constructor (nombre, duracion, precio) {
-        this.nombre = nombre;
-        this.duracion = duracion;
-        this.precio = parseFloat (precio);
-    }
+// class Servicio {
+//     constructor (nombre, duracion, precio) {
+//         this.nombre = nombre;
+//         this.duracion = duracion;
+//         this.precio = parseFloat (precio);
+//     }
 
-    sumarTarifaServicio () {
-        return this.precio * 1.10;
-    }
-}
-
-
-
-var arrayServicios = [];
+//     sumarTarifaServicio () {
+//         return this.precio * 1.10;
+//     }
+// }
 
 
-do {
-    var tipo = prompt ("¿Qué servicios deseas ingresar para contratar? Si no deseas ingresar servicios, escribe ninguno");
-    if (tipo === "ninguno" || tipo === "NINGUNO" || tipo === "Ninguno") {
-        break;
-    } else {
-        nombreServicio = tipo;
-        var duracionServicio = prompt ("Ingrese la duración del servicio");
-        var precioServicio = prompt ("Ingrese el precio del servicio");
-        arrayServicios.push (new Servicio (nombreServicio, duracionServicio, precioServicio));
-    }
-}
-while (tipo != "ninguno" || tipo != "NINGUNO" || tipo != "Ninguno")
 
-console.log (arrayServicios);
+// var arrayServicios = [];
 
-for (var servicio of arrayServicios) {
-    let divServicio = document.createElement ("div");
 
-    divServicio.innerHTML = `<h3> Tipo: ${servicio.nombre} </h3>
-                            <h3> Duracion: ${servicio.duracion} </h3>
-                            <h3> Precio: ${servicio.precio} </h3>
-                            <h3> Precio con Tarifa de Servicio: ${servicio.sumarTarifaServicio ()}</h3> `;
+// do {
+//     var tipo = prompt ("¿Qué servicios deseas ingresar para contratar? Si no deseas ingresar servicios, escribe ninguno");
+//     if (tipo === "ninguno" || tipo === "NINGUNO" || tipo === "Ninguno") {
+//         break;
+//     } else {
+//         nombreServicio = tipo;
+//         var duracionServicio = prompt ("Ingrese la duración del servicio");
+//         var precioServicio = prompt ("Ingrese el precio del servicio");
+//         arrayServicios.push (new Servicio (nombreServicio, duracionServicio, precioServicio));
+//     }
+// }
+// while (tipo != "ninguno" || tipo != "NINGUNO" || tipo != "Ninguno")
+
+// console.log (arrayServicios);
+
+// for (var servicio of arrayServicios) {
+//     let divServicio = document.createElement ("div");
+
+//     divServicio.innerHTML = `<h3> Tipo: ${servicio.nombre} </h3>
+//                             <h3> Duracion: ${servicio.duracion} </h3>
+//                             <h3> Precio: ${servicio.precio} </h3>
+//                             <h3> Precio con Tarifa de Servicio: ${servicio.sumarTarifaServicio ()}</h3> `;
     
-    document.body.appendChild(divServicio)
+//     document.body.appendChild(divServicio)
 
 
     // document.write ("<li><h3>Duracion: " + servicio.duracion + "</h3></li>");
@@ -59,7 +57,7 @@ for (var servicio of arrayServicios) {
     // console.log (servicio.precio);
     // console.log (servicio.sumarTarifaServicio());
 
-}
+// }
 
 
 // var ordenarPrecio = [];
@@ -80,3 +78,23 @@ for (var servicio of arrayServicios) {
 
 // }
 
+
+
+//Evento
+
+let botonCanto = document.getElementById ("btnCanto");
+
+let botonTap = document.getElementById ("btnTap");
+
+let botonPerfo = document.getElementById ("btnPerformance");
+
+botonCanto.onclick = reservarServicio;
+// botonCanto.addEventListener('click', reservarServicio);
+
+botonTap.addEventListener ('click', reservarServicio);
+
+botonPerfo.onclick = reservarServicio;
+
+function reservarServicio () {
+    alert ("Reservaste este servicio");
+}
