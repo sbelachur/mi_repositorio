@@ -79,22 +79,55 @@
 // }
 
 
+/*Servicios*/
+
+// class Servicio {
+//     constructor (nombre, duracion, precio) {
+//         this.nombre = nombre;
+//         this.duracion = duracion;
+//         this.precio = parseFloat (precio);
+//     }
+
+//     sumarTarifaServicio () {
+//         return this.precio * 1.10;
+//     }
+// }
+
 
 //Evento
 
-let botonCanto = document.getElementById ("btnCanto");
+// let botonCanto = document.getElementById ("btnCanto");
 
-let botonTap = document.getElementById ("btnTap");
+// // let botonTap = document.getElementById ("btnTap");
 
-let botonPerfo = document.getElementById ("btnPerformance");
+// // let botonPerfo = document.getElementById ("btnPerformance");
 
-botonCanto.onclick = reservarServicio;
-// botonCanto.addEventListener('click', reservarServicio);
+// botonCanto.onclick = reservarServicio;
+// // botonCanto.addEventListener('click', reservarServicio);
 
-botonTap.addEventListener ('click', reservarServicio);
+// // botonTap.addEventListener ('click', reservarServicio);
 
-botonPerfo.onclick = reservarServicio;
+// // botonPerfo.onclick = reservarServicio;
 
-function reservarServicio () {
-    alert ("Reservaste este servicio");
+// function reservarServicio () {
+//     console.log ("Reservaste este servicio");
+// }
+
+
+function Servicios () {
+    var $cajas = $("input:text:not (#resultado)");
+    var $resultado = $("#resultado");
+
+    $("input:button").click(function (){
+        var sumaTotal = 0;
+        $cajas.each (function () {
+            sumaTotal += parseInt ($(this).val ());
+        });
+        $resultado.val (sumaTotal);
+    })
 }
+
+
+
+
+
