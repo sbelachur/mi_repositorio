@@ -1,11 +1,18 @@
 
-let nombre = document.getElementById('nombre').value;
-let mail = document.getElementById('mail').value;
-let telefono = document.getElementById ('telefono').value;
-let texto = document.getElementById ('consulta').value;
+// let nombre = document.getElementById('nombre').value;
+// let mail = document.getElementById('mail').value;
+// let telefono = document.getElementById ('telefono').value;
+// let texto = document.getElementById ('consulta').value;
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+
+let nombre = $('#nombre').value;
+let mail = $('#mail').value;
+let telefono = $('#telefono').value;
+let texto = $('#consulta').value;
+
+
+$(document ).ready(function() {
+    $("#formulario").on('submit', validarFormulario); 
   });
   
   function validarFormulario(e) {
@@ -24,6 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
     } 
 
     
-    
     this.submit();
   }
+
+  $('h2').prepend ('<h2 id="rellenar"> Completa todos los campos del formulario </h3>');
+
+  $('#rellenar').css("background-color", "white")
+  .slideDown(4000)
+  .delay (2000)
+  .fadeOut(4000);
+  
+
+  
