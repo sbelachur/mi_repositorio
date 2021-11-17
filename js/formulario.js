@@ -19,14 +19,15 @@ $(document ).ready(function() {
     e.preventDefault();
     
     if(nombre.length == 0) {
-        console.log('Escribe tu nombre');
+        alert('El nombre no puede estar vacío');
         return false;
       
     } else if( !(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(valor)) ) {
+        alert ('El correo electrónico no es válido')
         return false;
     
     } else if (telefono.length < 10) {
-        console.log ('El teléfono no es válido');
+        alert ('El teléfono no es válido');
         return false;
     } 
 
@@ -34,12 +35,26 @@ $(document ).ready(function() {
     this.submit();
   }
 
-  $('h2').prepend ('<h2 id="rellenar"> Completa todos los campos del formulario </h3>');
+  $('h2').prepend ('<h2 id="rellenar"> Antes de enviar el formulario rellena todos los campos  </h2>');
 
-  $('#rellenar').css("background-color", "white")
-  .slideDown(4000)
+  $('#rellenar').slideDown(4000)
   .delay (2000)
   .fadeOut(4000);
   
 
-  
+const enlace = "https://jsonplaceholder.typicode.com/posts"
+
+const datosForm = {nombre: "Pepe", email: "pepe@gmail.com", telefono: "643917909", consulta: "Hola"}
+
+
+
+$(".botonFormulario").click (() => {
+
+    $.post (enlace, datosForm, (response, status) => {
+
+        if (status === "success") {
+            $("body").append (`<div>
+            Formulario enviado </div>`);
+        }
+    });
+});
