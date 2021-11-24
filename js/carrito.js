@@ -2,62 +2,82 @@
 /*Servicios*/
 
 
-const contenedorCarrito = getElementsByClassName ('contenedorCarrito');
+// const contenedorServicios = document.getElementByClassName ("contenedorServicios");
+// const contenedorServiciosCarrito = document.getElementById ("contendorServiciosCarrito");
 
-const servicio = getElementsByClassName ('servicio');
+const contenedorServicios = document.querySelector (".contenedorServicios");
+const contenedorServiciosCarrito = document.querySelector (".contenedorServiciosCarrito");
 
-const agregarCarrito = getElementsByClassName ('agregarCarrito');
+comprar ();
 
-const totalCarrito = getElementById ('totalCarrito');
+function comprar () {
+    contenedorServicios.addEventListener("click", reservarServicio);
+    document.addEventListener("DOMContentLoaded", leerLocalStorage);
+}
+ 
+function reservarServicio (e) {
 
-const reservar = getElementById ('reservar');
+    if (e.target.classList.contains ("agregarCarrito")) {
+        const servicio = document.querySelector(".servicio");
+        datosServicio (servicio);
+    }
+}
 
-const tituloServicio = getElementsByClassName ('tituloServicio');
-
-const precioServicio = getElementsByClassName ('precioServicio');
-
-
-class Servicios {
-
-    constructor(item){
-        this.id = item.id;
-        this.nombre = item.nombre;
-        this.precio = item.precio;
+function datosServicio () {
+    const infoServicio = {
+        titulo: servicio.querySelector('.tituloServicio').textContent,
+        precio: servicio.querySelector('.precioServicio').textContent,
     }
 
-};
+    añadirCarrito (infoServicio);
+}
 
-const servicios = [
-    {id: 1, nombre: 'claseCantoIndividual', precio: 15 },
-    {id: 2, nombre: 'claseCantoMensual', precio: 50},
-    {id: 3, nombre: 'claseCantoTrimestral', precio: 130},
-    {id: 4, nombre: 'claseTapIndividual', precio: 15 },
-    {id: 5, nombre: 'claseTapMensual', precio: 50},
-    {id: 6, nombre: 'claseTapTrimestral', precio: 130},
-    {id: 7, nombre: 'performance1', precio: 60},
-    {id: 8, nombre: 'performance2', precio: 100},
-];
+function añadirCarrito (servicio) {
+    const nuevoServicio = document.createElement ('p');
+    nuevoServicio.innerHTML = `
+
+    <p> ${titulo.servicio} </p>
+    <p> ${precio.servicio} </p>
+    `;
+
+    contenedorServiciosCarrito.appendChild (nuevoServicio);
+    servicioLocalStorage (servicio);
+
+}
+
+function servicioLocalStorage (servicio) {
+
+    let servicios;
+    servicios = obtenerServicioLocalStorage ();
+    servicios.push (servicio);
+    localStorage.setItem('servicios', JSON.stringify(servicios));
+
+}
 
 
-agregarCarrito.addEventListener ('click', evento => {
-    console.log (servicio);
-})
+function obtenerPlatillosLocalStorage() {
+    let serviciosLocalStorage;
 
-
-for (const servicio of servicios) {
-
-        let count = 1
-
-        getElementsByClassName ('servicios').prepend (
-            `
-            <div>
-            ${servicio.nombre} <span> ${servicio.precio} </span>
-            </div>
-            `
-
-        )
+    if(localStorage.getItem('servicios') === null) {
+        servicioLocalStorage = [];
+    }else {
+        servicioLocalStorage = JSON.parse(localStorage.getItem('servicios'));
     }
+    return servicioLocalStorage;
+}
 
+function leerLocalStorage() {
     
+   
 
+    servicioLocalStorage = obtenerPlatillosLocalStorage();
 
+    servicioLocalStorage.forEach(function(servicio){
+        const nuevoServicio = document.createElement('p');
+        nuevoServicio.innerHTML = `
+            <p> ${servicio.titulo} </p>
+            <p> ${servicio.precio} </p>
+        `;
+        contenedorServiciosCarrito.appendChild(nuevoServicio);
+    });
+}
