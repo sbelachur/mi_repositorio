@@ -111,7 +111,7 @@ $color-fondo-sec: #FACDC1;
 
 /*Servicios*/
 
-.servicios {
+.contenedorServicios {
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,13 +126,25 @@ $color-fondo-sec: #FACDC1;
 }
 
 .canto,
-.tap,
+.tapDance,
 .performance {
     margin: 60px;
     align-items: center;
     border: 1px solid $color-letra-sec;
     padding: 50px;
     text-transform: uppercase;
+}
+
+.estilo {
+        margin: 10em;
+        align-items: center;
+        padding: 25px;
+        text-transform: uppercase;
+        color: #EB5454;
+        border: 1px solid $color-letra-sec;
+        text-align: center;
+        font-size: 1.5rem;
+
 }
 
 /*.tap {
@@ -143,5 +155,40 @@ $color-fondo-sec: #FACDC1;
 .performance {
     width: 20%;
 }*/
+
+.agregarCarrito {
+
+    color: $color-letra-sec;
+    font-size: 1.3rem;
+    font-family: $font-sec;
+    display: inline-block;
+    padding: 2rem;
+    border: 1px solid $color-letra-ppal;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 10rem;
+    text-transform: uppercase;    
+
+}
+
+#reservar,
+#vaciar {
+    color: $color-letra-sec;
+    font-size: 1.3rem;
+    font-family: $font-sec;
+    display: flex;
+    padding: 2rem;
+    border: 1px solid $color-letra-ppal;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    width: 35rem;
+    text-transform: uppercase;
+    justify-content: center;
+
+}
 
 

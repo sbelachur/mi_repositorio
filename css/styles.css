@@ -170,7 +170,7 @@ a {
   padding: 3rem; }
 
 /*Servicios*/
-.servicios {
+.contenedorServicios {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,17 +178,27 @@ a {
   color: #EB5454;
   font-size: 2rem;
   margin: auto; }
-  .servicios h3 {
+  .contenedorServicios h3 {
     font-size: 2.5rem; }
 
 .canto,
-.tap,
+.tapDance,
 .performance {
   margin: 60px;
   align-items: center;
   border: 1px solid #5c5959;
   padding: 50px;
   text-transform: uppercase; }
+
+.estilo {
+  margin: 10em;
+  align-items: center;
+  padding: 25px;
+  text-transform: uppercase;
+  color: #EB5454;
+  border: 1px solid #5c5959;
+  text-align: center;
+  font-size: 1.5rem; }
 
 /*.tap {
     text-align: center;
@@ -198,6 +208,36 @@ a {
 .performance {
     width: 20%;
 }*/
+.agregarCarrito {
+  color: #5c5959;
+  font-size: 1.3rem;
+  font-family: "Dosis", sans-serif;
+  display: inline-block;
+  padding: 2rem;
+  border: 1px solid #EB5454;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 10rem;
+  text-transform: uppercase; }
+
+#reservar,
+#vaciar {
+  color: #5c5959;
+  font-size: 1.3rem;
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  padding: 2rem;
+  border: 1px solid #EB5454;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  width: 35rem;
+  text-transform: uppercase;
+  justify-content: center; }
+
 .sobreMi {
   font-family: "Oranienbaum", serif;
   color: #EB5454;
@@ -212,8 +252,15 @@ h2 {
   margin: 2em auto 2em 2.5em;
   text-transform: uppercase; }
 
+#tituloH3 {
+  font-family: "Oranienbaum", serif;
+  color: #EB5454;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase; }
+
 /*Contacto*/
-.formulario {
+#formulario {
   display: block;
   margin: 5rem auto;
   width: 50rem;
@@ -234,7 +281,8 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 10px;
-  transition: all 2s; }
+  transition: all 2s;
+  font-size: 3rem; }
 
 input:focus {
   width: 40em;
